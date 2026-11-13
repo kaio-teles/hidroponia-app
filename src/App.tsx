@@ -63,6 +63,18 @@ export default function App() {
 
         <form className="formulario" onSubmit={handleCalcular} noValidate>
           <div className="campo">
+            <label htmlFor="volume">Informe o volume de solução a ser preparada (L)</label>
+            <input
+              id="volume"
+              type="text"
+              inputMode="decimal"
+              placeholder="O valor deve ser em litros."
+              value={volume}
+              onChange={(e) => setVolume(e.target.value)}
+            />
+          </div>
+
+          <div className="campo">
             <label htmlFor="ce-atual">Informe a CE atual (dS m⁻¹)</label>
             <input
               id="ce-atual"
@@ -83,18 +95,6 @@ export default function App() {
               placeholder="Ex.: 1,1"
               value={ceEsperada}
               onChange={(e) => setCeEsperada(e.target.value)}
-            />
-          </div>
-
-          <div className="campo">
-            <label htmlFor="volume">Informe o volume de solução a ser preparada (L)</label>
-            <input
-              id="volume"
-              type="text"
-              inputMode="decimal"
-              placeholder="O valor deve ser em litros."
-              value={volume}
-              onChange={(e) => setVolume(e.target.value)}
             />
           </div>
 

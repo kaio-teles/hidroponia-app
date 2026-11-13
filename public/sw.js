@@ -1,4 +1,4 @@
-const CACHE_NAME = 'hidroponia-v1';
+const CACHE_NAME = 'hidroponia-v2';
 
 const ARQUIVOS_BASE = [
   '/',
@@ -89,3 +89,4 @@ self.addEventListener('fetch', (event) => {
     })()
   );
 });
+
